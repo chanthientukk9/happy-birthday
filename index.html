@@ -33,7 +33,7 @@
         width: 800px;
         height: 420px;
         padding: 10px;
-        margin: 300px auto;
+        margin: calc((100vh - 420px) / 2) auto;
         position: relative;
       }
       .balloon {
@@ -53,6 +53,7 @@
         padding: 10px;
         box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
         -webkit-transform-origin: bottom center;
+        cursor: pointer;
       }
       .balloon > div:nth-child(1) {
         background: rgba(182, 15, 97, 0.9);
@@ -349,31 +350,36 @@
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
-        contentBox.innerHTML = "Chúc em gái, ngày càng đẹp troaii =))). Sang tuổi mới code tung vũ trụ, giúp Amphy đặt chân vào dải ngân hà 2,0 <3. Chúc em chỉ nói lời hay ý đẹp, thùy mị nết na =)) được phiếu bé ngoan, được mọi người yêu thương nhất nhà <3 Happy birthday em yêuuuu <3 - Chị Huyền";
+        contentBox.innerHTML =
+          "Chúc em gái, ngày càng đẹp troaii =))). Sang tuổi mới code tung vũ trụ, giúp Amphy đặt chân vào dải ngân hà 2,0 <3. Chúc em chỉ nói lời hay ý đẹp, thùy mị nết na =)) được phiếu bé ngoan, được mọi người yêu thương nhất nhà <3 Happy birthday em yêuuuu <3 - Chị Huyền";
       };
       const openAFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
-        contentBox.innerHTML = "Chúc Huệ tuổi mới sẽ đạt được những thứ mình muốn, tuổi mới có bồ - Anh Đạt";
+        contentBox.innerHTML =
+          "Chúc Huệ tuổi mới sẽ đạt được những thứ mình muốn, tuổi mới có bồ - Anh Đạt";
       };
       const openMFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
-        contentBox.innerHTML = "Chúc Huệ sinh nhật vui vẻ :v - Anh Tú/ Chúc Huệ tuổi mới ít bug lạ bug lùng, mau lên level cao nhé - Anh Chu";
+        contentBox.innerHTML =
+          "Chúc Huệ sinh nhật vui vẻ :v - Anh Tú/ Chúc Huệ tuổi mới ít bug lạ bug lùng, mau lên level cao nhé - Anh Chu";
       };
       const openIFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
-        contentBox.innerHTML = "chúc Huệ tuổi mới có nhiều điều mới mẻ hay ho nè he, như là: trọ mới trong thành phố để đi quẩy xuyên đêm với mọi người được nè he, người yêu mới để bớt dí anh nè he, level mới để ôm nhiều task khủng của Amphy nè he,... Amphy yêu em, Omri Kovi Elena yêu em nè he <3 - Anh Nam";
+        contentBox.innerHTML =
+          "chúc Huệ tuổi mới có nhiều điều mới mẻ hay ho nè he, như là: trọ mới trong thành phố để đi quẩy xuyên đêm với mọi người được nè he, người yêu mới để bớt dí anh nè he, level mới để ôm nhiều task khủng của Amphy nè he,... Amphy yêu em, Omri Kovi Elena yêu em nè he <3 - Anh Nam";
       };
       const openEFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
-        contentBox.innerHTML = "Chúc Huệ tuổi mới khoẻ như trâu, code như trâu, gồng gánh Amphy - Anh Hiếu";
+        contentBox.innerHTML =
+          "Chúc Huệ tuổi mới khoẻ như trâu, code như trâu, gồng gánh Amphy - Anh Hiếu";
       };
       document.addEventListener("keypress", (e) => {
         if (e.key === "x") {
