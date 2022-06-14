@@ -351,43 +351,46 @@
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
         contentBox.innerHTML =
-          "Chúc chị Duyên Seller sớm lên senior, sớm tìm được nhà và nương tay với tụi em :3 - Harry";
+          "<div>Chúc chị Duyên Seller sớm lên senior, sớm tìm được nhà và nương tay với tụi em :3 - Harry<br/><br/>Chúc chị D sớm lên PM =)) - Felix<div>";
       };
       const openAFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
         contentBox.innerHTML =
-          "Chúc chị D sớm lên PM =)) - Felix";
+          "Amphy Team chúc Duyên trẻ khoẻ, vạn sự như ý, vạn bug trong mơ, an khang thịnh vượng, 1 năm 2 đứa 2 năm 3 đứa ❤️";
       };
       const openMFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
         contentBox.innerHTML =
-          "Chúc chị Duyên k nhầm tên em với Tín nưaz =))) - Smile";
+          "<div>Chúc \"chị\" Duyên sớm tìm được nhà - TC <br/><br/> Chúc chị Duyên ngày một giàu hơn :))) - Veigar</div>";
       };
       const openIFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
         contentBox.innerHTML =
-          "Chúc \"chị\" Duyên sớm tìm được nhà - TC / Chúc chị Duyên ngày một giàu hơn :))) - Veigar";
+          "Mobile Team chúc Duyên ước gì được nấy, bách niên giai lão, sinh nhật vui vẻ, happy birthday ❤️ Yay";
       };
       const openEFunc = () => {
         const contentBox = document.querySelector("#content-box");
         contentBox.classList.remove("content-modal-close");
         contentBox.removeAttribute("style");
         contentBox.innerHTML =
-          "chúc ko còn ai nhảy vào mồm chị Duyên nữa =))) - Bé Đào của Duyên";
+          "<div>Chúc chị Duyên k nhầm tên em với Tín nưaz =))) - Smile <br/><br/> chúc ko còn ai nhảy vào mồm chị Duyên nữa =))) - Bé Đào của Duyên</div>";
       };
-      document.addEventListener("keypress", (e) => {
-        if (e.key === "x") {
-          const contentBox = document.querySelector("#content-box");
+      const closeMessageModal = () => {
+        const contentBox = document.querySelector("#content-box");
           contentBox.classList.add("content-modal-close");
           setTimeout(() => {
             contentBox.setAttribute("style", "display:none;");
           }, 300);
+      };
+      document.addEventListener("keypress", (e) => {
+        if (e.key === "x") {
+          closeMessageModal()
         }
       });
     </script>
@@ -426,7 +429,10 @@
         <div onclick="openEFunc()"><span>N</span></div>
       </div>
     </div>
-    <div class="content-modal content-modal-close" id="content-box"></div>
+    <div class="content-modal content-modal-close">
+      <div onclick="closeMessageModal()">Close</div>
+      <div id="content-box"></div>
+    </div>
     <script></script>
     <script>
       if (document.location.search.match(/type=embed/gi)) {
